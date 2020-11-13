@@ -1,0 +1,311 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+main {
+  margin: 60px 16px 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.video-box {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.video-box,
+.video-box video,
+.video-box .video-text {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-box video {
+  object-fit: cover;
+}
+
+.video-box .video-text {
+  display: flex;
+}
+
+.main {
+  background: transparent;
+  position: relative;
+  margin-top: 100vh;
+}
+
+.main::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -100vh;
+}
+
+.main::after {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slogan-banner {
+  background-color: #b22222;
+  color: white;
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipment-text {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url(https://cdn.pixabay.com/photo/2015/04/20/13/09/equipment-731132_960_720.jpg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.BW {
+  filter: grayscale(100%);
+}
+
+.locations-text {
+  background-color: #242629;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background: url(https://cdn.pixabay.com/photo/2016/11/22/20/11/photography-1850469_960_720.jpg) */
+  background: url(https://cdn.pixabay.com/photo/2018/02/14/21/18/audio-3153963_960_720.jpg)
+    no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.feature-html,
+.feature-body {
+  height: 120vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: -20px;
+  font-size: 3vmin;
+}
+
+.feature-html {
+  background: #151515;
+  color: #fff;
+  overflow: hidden;
+}
+
+.feature-body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.feature-main {
+  background: white;
+  position: relative;
+}
+
+.feature-main::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -120vh;
+}
+
+.feature-text {
+  background: white;
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slides {
+  position: relative;
+  display: grid;
+}
+.slides > .slide {
+  grid-area: 1 / -1;
+}
+
+.slideBTN {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: white;
+  position: absolute;
+  font-size: 10rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: 5;
+  top: 30%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0.7;
+}
+
+.slideBTN:hover {
+  opacity: 1;
+}
+
+.slideBTN:focus {
+  outline: none;
+}
+
+.leftBTN {
+  left: -50%;
+}
+
+.rightBTN {
+  right: -50%;
+}
+
+.slideContent {
+  width: 30vw;
+  height: 40vw;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  opacity: 0.7;
+  display: grid;
+  align-content: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(1000px) translateX(calc(100% * var(--offset)))
+    rotateY(calc(-45deg * var(--dir)));
+  transform: perspective(1000px) translateX(calc(100% * var(--offset)))
+    rotateY(calc(-45deg * var(--dir)));
+}
+
+.slideContentInner {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(2rem);
+  transform: translateZ(2rem);
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  text-shadow: 0 0.1rem 1rem #000;
+  opacity: 0;
+}
+.slideContentInner .slideSubtitle,
+.slideContentInner .slideTitle {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0.2ch;
+  text-transform: uppercase;
+  margin: 0;
+}
+.slideContentInner .slideSubtitle::before {
+  content: "— ";
+}
+.slideContentInner .slideDescription {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.2ch;
+}
+
+.slideBackground {
+  position: fixed;
+  top: 0;
+  left: -10%;
+  right: -10%;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s linear, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s linear, transform 0.3s ease-in-out;
+  transition: opacity 0.3s linear, transform 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+  pointer-events: none;
+  -webkit-transform: translateX(calc(10% * var(--dir)));
+  transform: translateX(calc(10% * var(--dir)));
+}
+
+.slide[data-active] {
+  z-index: 2;
+  pointer-events: auto;
+}
+.slide[data-active] .slideBackground {
+  opacity: 0.2;
+  -webkit-transform: none;
+  transform: none;
+}
+.slide[data-active] .slideContentInner {
+  opacity: 1;
+}
+.slide[data-active] .slideContent {
+  --x: calc(var(--px) - 0.5);
+  --y: calc(var(--py) - 0.5);
+  opacity: 1;
+  -webkit-transform: perspective(1000px);
+  transform: perspective(1000px);
+}
+.slide[data-active] .slideContent:hover {
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
+    rotateX(calc(var(--y) * -45deg));
+  transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
+    rotateX(calc(var(--y) * -45deg));
+}
