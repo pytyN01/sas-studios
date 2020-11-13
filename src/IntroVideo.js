@@ -1,5 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
+import Link from "./Link";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import React from "react";
@@ -33,6 +34,9 @@ export default function IntroVideo() {
         <div className={eBlur ? "equipment-text BW" : "equipment-text"}>
           <Button
             variant="outlined"
+            component={Link}
+            href="/equipment"
+            naked
             className={classes.btn}
             onMouseOver={() => setEblur(false)}
             onMouseOut={() => setEblur(true)}
@@ -46,6 +50,9 @@ export default function IntroVideo() {
         <div className={lBlur ? "locations-text BW" : "locations-text"}>
           <Button
             variant="outlined"
+            component={Link}
+            href="/locations"
+            naked
             className={classes.btn}
             onMouseOver={() => setLblur(false)}
             onMouseOut={() => setLblur(true)}

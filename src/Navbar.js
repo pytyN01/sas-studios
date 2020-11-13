@@ -4,7 +4,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import Link from "next/link";
+import Link from "./Link";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,21 +31,21 @@ export default function ButtonAppBar() {
           <Typography variant="h6" className={classes.title}>
             SAS Movie Studios
           </Typography>
-          <Link href="/" passHref>
-            <Button color="inherit">Home</Button>
-          </Link>
-          <Link href="/feature" passHref>
-            <Button color="inherit">Feature Films</Button>
-          </Link>
-          <Link href="/equipment" passHref>
-            <Button color="inherit">Rental Equipment</Button>
-          </Link>
-          <Link href="/locations" passHref>
-            <Button color="inherit">Rental Locations</Button>
-          </Link>
-          <Link href="/contact" passHref>
-            <Button color="inherit">Contact</Button>
-          </Link>
+          <Button component={Link} href="/" naked color="inherit">
+            Home
+          </Button>
+          <Button component={Link} href="/feature" naked color="inherit">
+            Feature Films
+          </Button>
+          <Button component={Link} href="/equipment" naked color="inherit">
+            Rental Equipment
+          </Button>
+          <Button component={Link} href="/locations" naked color="inherit">
+            Rental Locations
+          </Button>
+          <Button component={Link} href="/contact" naked color="inherit">
+            Contact
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

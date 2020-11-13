@@ -3,6 +3,10 @@ import Head from "next/head";
 import React from "react";
 
 export default function Locations() {
+  // React.useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
+
   return (
     <React.Fragment>
       <Head>

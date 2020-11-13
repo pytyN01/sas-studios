@@ -96,8 +96,7 @@ a {
   justify-content: center;
   align-items: center;
 
-  background: url(https://cdn.pixabay.com/photo/2015/04/20/13/09/equipment-731132_960_720.jpg)
-    no-repeat center center fixed;
+  background: url(/equipment-sas.jpg) no-repeat center bottom fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -116,14 +115,11 @@ a {
   justify-content: center;
   align-items: center;
 
-  /* background: url(https://cdn.pixabay.com/photo/2016/11/22/20/11/photography-1850469_960_720.jpg) */
-  background: url(https://cdn.pixabay.com/photo/2018/02/14/21/18/audio-3153963_960_720.jpg)
-    no-repeat fixed;
+  background: url(/locations-sas.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center bottom;
 }
 
 .feature-html,
