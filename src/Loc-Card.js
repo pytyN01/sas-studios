@@ -1,20 +1,97 @@
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
 
-import Link from "./Link";
-import React from "react";
+const images = [
+  {
+    url: "/applewood-hills.webp",
+    title: "Applewood Hills",
+    width: "33.3%",
+  },
+  {
+    url: "/bar-mood.webp",
+    title: "Bar Set",
+    width: "33.3%",
+  },
+  {
+    url: "/cafe-restaurant.webp",
+    title: "Cafe Set",
+    width: "33.3%",
+  },
+  {
+    url: "/castle.webp",
+    title: "Castle Set",
+    width: "33.3%",
+  },
+  {
+    url: "/CIRCA.webp",
+    title: "CIRCA",
+    width: "33.3%",
+  },
+  {
+    url: "/factory.webp",
+    title: "Factory Set",
+    width: "33.3%",
+  },
+  {
+    url: "/highschool.webp",
+    title: "Highschool Set",
+    width: "33.3%",
+  },
+  {
+    url: "/hill-mansion.webp",
+    title: "Hill Mansion",
+    width: "33.3%",
+  },
+  {
+    url: "/lighting.webp",
+    title: "Lighting Set",
+    width: "33.3%",
+  },
+  {
+    url: "/police-office.webp",
+    title: "Police/Office Set",
+    width: "33.3%",
+  },
+  {
+    url: "/skatepark.webp",
+    title: "Skate Park",
+    width: "33.3%",
+  },
+  {
+    url: "/stage.webp",
+    title: "Stage Set",
+    width: "33.3%",
+  },
+  {
+    url: "/street-front.webp",
+    title: "Street Front",
+    width: "33.3%",
+  },
+  {
+    url: "/theater.webp",
+    title: "Theater Set",
+    width: "33.3%",
+  },
+  {
+    url: "/wedding.webp",
+    title: "Wedding Set",
+    width: "33.3%",
+  },
+];
 
 const useStyles = makeStyles((theme) => ({
-  btn: {
-    fontSize: "4rem",
-    color: "white",
+  root: {
+    display: "flex",
+    flexWrap: "wrap",
+    minWidth: 300,
+    width: "100%",
+    marginBottom: "10vh",
   },
   image: {
     position: "relative",
-    height: "100vh",
-    width: "100vw",
+    height: 250,
     [theme.breakpoints.down("xs")]: {
       width: "100% !important", // Overrides inline-style
       height: 100,
@@ -28,10 +105,7 @@ const useStyles = makeStyles((theme) => ({
         opacity: 0,
       },
       "& $imageTitle": {
-        border: "4px solid currentColor",
-      },
-      "& $imageSrc": {
-        filter: "grayscale(0%)",
+        display: "none",
       },
     },
   },
@@ -48,7 +122,6 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.common.white,
   },
   imageSrc: {
-    filter: "grayscale(100%)",
     position: "absolute",
     left: 0,
     right: 0,
@@ -72,11 +145,6 @@ const useStyles = makeStyles((theme) => ({
     padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${
       theme.spacing(1) + 6
     }px`,
-    "&:hover, &$focusVisible": {
-      "& $imageSrc": {
-        filter: "grayscale(0%)",
-      },
-    },
   },
   imageMarked: {
     height: 3,
@@ -89,76 +157,41 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function IntroVideo() {
+export default function ButtonBases() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <div className="video-box">
-        <video autoPlay playsInline muted>
-          <source src="/Logo.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div className="main">
-        <div className="slogan-banner">
-          <Typography variant="h2">
-            Largest inventory! Lowest price! Guaranteed!!
-          </Typography>
-        </div>
+    <div className={classes.root}>
+      {images.map((image) => (
         <ButtonBase
           focusRipple
+          key={image.title}
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: image.width,
+          }}
         >
           <span
             className={classes.imageSrc}
             style={{
-              backgroundImage: `url(/equipment-sas.jpg)`,
+              backgroundImage: `url(${image.url})`,
             }}
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton}>
             <Typography
               component="span"
-              variant="h1"
+              variant="subtitle1"
               color="inherit"
               className={classes.imageTitle}
             >
-              View Inventory
+              {image.title}
               <span className={classes.imageMarked} />
             </Typography>
           </span>
         </ButtonBase>
-
-        <div className="slogan-banner">
-          <Typography variant="h2">Coast-to-Coast Film Locations!</Typography>
-        </div>
-
-        <ButtonBase
-          focusRipple
-          className={classes.image}
-          focusVisibleClassName={classes.focusVisible}
-        >
-          <span
-            className={classes.imageSrc}
-            style={{
-              backgroundImage: `url(/locations-sas.png)`,
-            }}
-          />
-          <span className={classes.imageBackdrop} />
-          <span className={classes.imageButton}>
-            <Typography
-              component="span"
-              variant="h1"
-              color="inherit"
-              className={classes.imageTitle}
-            >
-              View Locations
-              <span className={classes.imageMarked} />
-            </Typography>
-          </span>
-        </ButtonBase>
-      </div>
-    </React.Fragment>
+      ))}
+    </div>
   );
 }

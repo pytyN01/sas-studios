@@ -1,118 +1,68 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
+import React from "react";
 
-const images = [
-  {
-    url: "/5-gal-water.webp",
-    title: "5-Gal Water Jug",
-    width: "33.3%",
-  },
+import { makeStyles } from "@material-ui/core/styles";
+
+const OFFICE = [
   {
     url: "/40-tv.webp",
     title: "40' TVs",
     width: "33.3%",
   },
   {
-    url: "/ac-unit.webp",
-    title: "AC Units",
+    url: "/coffee-maker.webp",
+    title: "Coffee Maker",
     width: "33.3%",
   },
   {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
-    width: "33.3%",
-  },
-
-  {
-    url: "/arri-hmi-lighting.webp",
-    title: "ARRI HMI Lighting",
+    url: "/couch.webp",
+    title: "Couch",
     width: "33.3%",
   },
   {
-    url: "/arri-sky-panels.webp",
-    title: "ARRI Sky Panels",
+    url: "/fan-mister.webp",
+    title: "Fan Mister",
     width: "33.3%",
   },
   {
-    url: "/arri-tungsten.webp",
-    title: "ARRI Tungsten",
+    url: "/fire-ex.webp",
+    title: "Fire Extinguisher",
     width: "33.3%",
   },
   {
-    url: "/astro-turf.webp",
-    title: "Astro Turf",
+    url: "/first-aid.webp",
+    title: "First Aid",
     width: "33.3%",
   },
   {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
+    url: "/popcorn-maker.webp",
+    title: "Popcorn Maker",
     width: "33.3%",
   },
   {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
+    url: "/portable-printer.webp",
+    title: "Portable Printer",
     width: "33.3%",
   },
   {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
+    url: "/qsc-speaker.webp",
+    title: "QSC 12.2 Speaker",
     width: "33.3%",
   },
   {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
+    url: "/refrigerator-freezer.webp",
+    title: "Refrigerator Freezer",
     width: "33.3%",
   },
   {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
+    url: "/serving-dish.webp",
+    title: "Serving Dish",
     width: "33.3%",
   },
   {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
-    width: "33.3%",
-  },
-  {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
-    width: "33.3%",
-  },
-  {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
-    width: "33.3%",
-  },
-  {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
-    width: "33.3%",
-  },
-  {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
-    width: "33.3%",
-  },
-  {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
-    width: "33.3%",
-  },
-  {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
-    width: "33.3%",
-  },
-  {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
-    width: "33.3%",
-  },
-  {
-    url: "/apple-box.webp",
-    title: "Apple Boxs",
+    url: "/water-dispenser.webp",
+    title: "Water Dispenser",
     width: "33.3%",
   },
 ];
@@ -123,10 +73,11 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     minWidth: 300,
     width: "100%",
+    paddingBottom: "5vh",
   },
   image: {
     position: "relative",
-    height: 250,
+    height: 280,
     [theme.breakpoints.down("xs")]: {
       width: "100% !important", // Overrides inline-style
       height: 100,
@@ -140,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
         opacity: 0,
       },
       "& $imageTitle": {
-        border: "4px solid currentColor",
+        display: "none",
       },
     },
   },
@@ -197,7 +148,7 @@ export default function ButtonBases() {
 
   return (
     <div className={classes.root}>
-      {images.map((image) => (
+      {OFFICE.map((image) => (
         <ButtonBase
           focusRipple
           key={image.title}

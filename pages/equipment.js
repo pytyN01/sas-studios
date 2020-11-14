@@ -1,8 +1,14 @@
+import { Typography } from "@material-ui/core";
 import Layout from "../src/Layout";
-import Card from "../src/card";
 import Head from "next/head";
 import React from "react";
-import { Container, Typography } from "@material-ui/core";
+
+import Office from "../src/Office";
+import Outdoor from "../src/Outdoor";
+import Logistic from "../src/Logistic";
+import Set from "../src/Set";
+import Grip from "../src/Grip";
+import All from "../src/All";
 
 export default function Equipment() {
   // React.useEffect(() => {
@@ -15,12 +21,35 @@ export default function Equipment() {
         <title>SAS: Rental Equipment</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Navbar /> */}
-
-      <Typography align="center" variant="h1" gutterBottom>
-        Rental Equipment
+      <Typography align="left" variant="h5" gutterBottom>
+        Office Equipment
       </Typography>
-      <Card />
+      <Office />
+
+      <Typography align="left" variant="h5" gutterBottom>
+        Outdoor Equipment
+      </Typography>
+      <Outdoor />
+
+      <Typography align="left" variant="h5" gutterBottom>
+        Logistic Equipment
+      </Typography>
+      <Logistic />
+
+      <Typography align="left" variant="h5" gutterBottom>
+        Set Design Equipment
+      </Typography>
+      <Set />
+
+      <Typography align="left" variant="h5" gutterBottom>
+        Grip Equipment
+      </Typography>
+      <Grip />
+
+      <Typography align="left" variant="h5" gutterBottom>
+        All Equipment
+      </Typography>
+      <All />
     </Layout>
   );
 }
