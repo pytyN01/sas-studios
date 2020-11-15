@@ -4,7 +4,7 @@ import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
 
-const LOGISTIC = [
+const POPULAR = [
   {
     url: "/ac-unit.webp",
     title: "AC Units",
@@ -13,6 +13,11 @@ const LOGISTIC = [
   {
     url: "/boom-lift.webp",
     title: "Boom Lift",
+    width: "33.3%",
+  },
+  {
+    url: "/carts-dolly.webp",
+    title: "Dolly Carts",
     width: "33.3%",
   },
   {
@@ -26,8 +31,8 @@ const LOGISTIC = [
     width: "33.3%",
   },
   {
-    url: "/distro-cable.webp",
-    title: "Disto Cable",
+    url: "/event-staging.webp",
+    title: "Event Staging",
     width: "33.3%",
   },
   {
@@ -46,23 +51,8 @@ const LOGISTIC = [
     width: "33.3%",
   },
   {
-    url: "/gas-can.webp",
-    title: "Gas Can",
-    width: "33.3%",
-  },
-  {
     url: "/grip-truck.webp",
     title: "Grip Truck",
-    width: "33.3%",
-  },
-  {
-    url: "/ladder.webp",
-    title: "Ladder",
-    width: "33.3%",
-  },
-  {
-    url: "/led-wall-panels.webp",
-    title: "LED Wall Panels Box",
     width: "33.3%",
   },
   {
@@ -71,18 +61,13 @@ const LOGISTIC = [
     width: "33.3%",
   },
   {
+    url: "/premade-set.webp",
+    title: "Pre-made Set",
+    width: "33.3%",
+  },
+  {
     url: "/production-trailer.webp",
     title: "Production Trailer",
-    width: "33.3%",
-  },
-  {
-    url: "/safety-harness.webp",
-    title: "Safety Harness",
-    width: "33.3%",
-  },
-  {
-    url: "/sand-bag.webp",
-    title: "Sand Bag",
     width: "33.3%",
   },
   {
@@ -96,13 +81,23 @@ const LOGISTIC = [
     width: "33.3%",
   },
   {
+    url: "/speed-rail.webp",
+    title: "Speed Rail",
+    width: "33.3%",
+  },
+  {
+    url: "/suction-car-kit.webp",
+    title: "Suction Car Kit",
+    width: "33.3%",
+  },
+  {
     url: "/taco-cart.webp",
     title: "Taco Cart",
     width: "33.3%",
   },
   {
-    url: "/walkie-talkie.webp",
-    title: "Walkie Talkie",
+    url: "/trussing-support.webp",
+    title: "Trussing Support",
     width: "33.3%",
   },
 ];
@@ -188,7 +183,7 @@ export default function ButtonBases() {
 
   return (
     <div className={classes.root}>
-      {LOGISTIC.map((image) => (
+      {POPULAR.map((image) => (
         <ButtonBase
           focusRipple
           key={image.title}

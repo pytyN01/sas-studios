@@ -5,15 +5,15 @@ import React from "react";
 
 import Office from "../src/Office";
 import Outdoor from "../src/Outdoor";
-import Logistic from "../src/Logistic";
+import Popular from "../src/Popular";
 import Set from "../src/Set";
 import Grip from "../src/Grip";
 import All from "../src/All";
 
-export default function Equipment() {
-  // React.useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+export default function Home() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <Layout>
@@ -21,6 +21,11 @@ export default function Equipment() {
         <title>SAS: Rental Equipment</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Typography align="left" variant="h5" gutterBottom>
+        Most Popular Rental Equipment
+      </Typography>
+      <Popular />
+
       <Typography align="left" variant="h5" gutterBottom>
         Office Equipment
       </Typography>
@@ -30,11 +35,6 @@ export default function Equipment() {
         Outdoor Equipment
       </Typography>
       <Outdoor />
-
-      <Typography align="left" variant="h5" gutterBottom>
-        Logistic Equipment
-      </Typography>
-      <Logistic />
 
       <Typography align="left" variant="h5" gutterBottom>
         Set Design Equipment

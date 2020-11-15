@@ -26,11 +26,6 @@ const SET = [
     width: "33.3%",
   },
   {
-    url: "/astro-turf.webp",
-    title: "Astro Turf",
-    width: "33.3%",
-  },
-  {
     url: "/chair-stool.webp",
     title: "Chair Stool",
     width: "33.3%",
@@ -51,6 +46,11 @@ const SET = [
     width: "33.3%",
   },
   {
+    url: "/red-carpet.webp",
+    title: "Red Carpet",
+    width: "33.3%",
+  },
+  {
     url: "/rolling-case.webp",
     title: "Rolling Case",
     width: "33.3%",
@@ -66,43 +66,8 @@ const SET = [
     width: "33.3%",
   },
   {
-    url: "/silent-generator.webp",
-    title: "Silent Generator",
-    width: "33.3%",
-  },
-  {
-    url: "/speed-rail.webp",
-    title: "Speed Rail",
-    width: "33.3%",
-  },
-  {
-    url: "/suction-car-kit.webp",
-    title: "Suction Car Kit",
-    width: "33.3%",
-  },
-  {
-    url: "/taco-cart.webp",
-    title: "Taco Cart",
-    width: "33.3%",
-  },
-  {
-    url: "/trussing-support.webp",
-    title: "Trussing Support",
-    width: "33.3%",
-  },
-  {
     url: "/wardrobe-rack.webp",
     title: "Wardrobe Rack",
-    width: "33.3%",
-  },
-  {
-    url: "/wireless-microphone-unit.webp",
-    title: "Wireless Microphone Unit",
-    width: "33.3%",
-  },
-  {
-    url: "/wireless-microphone.webp",
-    title: "Wireless Microphone",
     width: "33.3%",
   },
 ];

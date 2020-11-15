@@ -305,3 +305,29 @@ a {
   transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
     rotateX(calc(var(--y) * -45deg));
 }
+
+.parallax {
+  background-image: url("/contact.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.parallax-text {
+  border-radius: 20px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.parallax-subtext {
+  height: 100vh;
+  padding: 9vh 4vh;
+}

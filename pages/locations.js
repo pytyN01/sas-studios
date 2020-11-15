@@ -4,10 +4,10 @@ import Layout from "../src/Layout";
 import Head from "next/head";
 import React from "react";
 
-export default function Locations() {
-  // React.useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+export default function Home() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <Layout>

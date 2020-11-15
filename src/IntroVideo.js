@@ -1,7 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
 
 import Link from "./Link";
 import React from "react";
@@ -106,6 +105,9 @@ export default function IntroVideo() {
           </Typography>
         </div>
         <ButtonBase
+          component={Link}
+          href="/equipment"
+          naked
           focusRipple
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
@@ -135,6 +137,9 @@ export default function IntroVideo() {
         </div>
 
         <ButtonBase
+          component={Link}
+          href="/locations"
+          naked
           focusRipple
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}

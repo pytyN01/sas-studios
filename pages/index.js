@@ -4,9 +4,9 @@ import Head from "next/head";
 import React from "react";
 
 export default function Home() {
-  //   React.useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <React.Fragment>

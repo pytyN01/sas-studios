@@ -6,16 +6,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const GRIP = [
   {
-    url: "/5-gal-water.webp",
-    title: "5-Gal Water Jug",
-    width: "33.3%",
-  },
-  {
-    url: "/40-tv.webp",
-    title: "40' TVs",
-    width: "33.3%",
-  },
-  {
     url: "/ac-unit.webp",
     title: "AC Units",
     width: "33.3%",
@@ -38,11 +28,6 @@ const GRIP = [
   {
     url: "/arri-tungsten.webp",
     title: "ARRI Tungsten",
-    width: "33.3%",
-  },
-  {
-    url: "/astro-turf.webp",
-    title: "Astro Turf",
     width: "33.3%",
   },
   {
@@ -81,28 +66,8 @@ const GRIP = [
     width: "33.3%",
   },
   {
-    url: "/chair-stool.webp",
-    title: "Chair Stool",
-    width: "33.3%",
-  },
-  {
-    url: "/coffee-maker.webp",
-    title: "Coffee Maker",
-    width: "33.3%",
-  },
-  {
     url: "/cone.webp",
     title: "Cone",
-    width: "33.3%",
-  },
-  {
-    url: "/cooler.webp",
-    title: "Cooler",
-    width: "33.3%",
-  },
-  {
-    url: "/couch.webp",
-    title: "Couch",
     width: "33.3%",
   },
   {
@@ -131,33 +96,8 @@ const GRIP = [
     width: "33.3%",
   },
   {
-    url: "/event-staging.webp",
-    title: "Event Staging",
-    width: "33.3%",
-  },
-  {
-    url: "/ez-tent.webp",
-    title: "EZ Tent",
-    width: "33.3%",
-  },
-  {
-    url: "/fan-mister.webp",
-    title: "Fan Mister",
-    width: "33.3%",
-  },
-  {
-    url: "/fire-ex.webp",
-    title: "Fire Extinguisher",
-    width: "33.3%",
-  },
-  {
-    url: "/first-aid.webp",
-    title: "First Aid",
-    width: "33.3%",
-  },
-  {
     url: "/fuel-caddy.webp",
-    title: "Distribution Box",
+    title: "Fuel Caddy",
     width: "33.3%",
   },
   {
@@ -186,16 +126,6 @@ const GRIP = [
     width: "33.3%",
   },
   {
-    url: "/iron-board.webp",
-    title: "Iron Board",
-    width: "33.3%",
-  },
-  {
-    url: "/iron-steamer.webp",
-    title: "Iron Steamer",
-    width: "33.3%",
-  },
-  {
     url: "/ladder.webp",
     title: "Ladder",
     width: "33.3%",
@@ -221,38 +151,13 @@ const GRIP = [
     width: "33.3%",
   },
   {
-    url: "/microwave.webp",
-    title: "Microwave",
-    width: "33.3%",
-  },
-  {
-    url: "/patio-heater.webp",
-    title: "Patio Heater",
-    width: "33.3%",
-  },
-  {
-    url: "/popcorn-maker.webp",
-    title: "Popcorn Maker",
-    width: "33.3%",
-  },
-  {
     url: "/porta-potty.webp",
     title: "Porta Potty",
     width: "33.3%",
   },
   {
-    url: "/portable-printer.webp",
-    title: "Portable Printer",
-    width: "33.3%",
-  },
-  {
     url: "/power-dome.webp",
     title: "Power Dome",
-    width: "33.3%",
-  },
-  {
-    url: "/premade-set.webp",
-    title: "Pre-made Set",
     width: "33.3%",
   },
   {
@@ -263,26 +168,6 @@ const GRIP = [
   {
     url: "/propane-heater.webp",
     title: "Propane Heater",
-    width: "33.3%",
-  },
-  {
-    url: "/qsc-speaker.webp",
-    title: "QSC 12.2 Speaker",
-    width: "33.3%",
-  },
-  {
-    url: "/red-carpet.webp",
-    title: "Red Carpet",
-    width: "33.3%",
-  },
-  {
-    url: "/refrigerator-freezer.webp",
-    title: "Refrigerator Freezer",
-    width: "33.3%",
-  },
-  {
-    url: "/ribbon-stand.webp",
-    title: "Ribbon Stand",
     width: "33.3%",
   },
   {
@@ -303,11 +188,6 @@ const GRIP = [
   {
     url: "/scissor-lift.webp",
     title: "Scissor Lift",
-    width: "33.3%",
-  },
-  {
-    url: "/serving-dish.webp",
-    title: "Serving Dish",
     width: "33.3%",
   },
   {
@@ -341,11 +221,6 @@ const GRIP = [
     width: "33.3%",
   },
   {
-    url: "/tarp.webp",
-    title: "Tarp",
-    width: "33.3%",
-  },
-  {
     url: "/trussing-support.webp",
     title: "Trussing Support",
     width: "33.3%",
@@ -353,16 +228,6 @@ const GRIP = [
   {
     url: "/walkie-talkie.webp",
     title: "Walkie Talkie",
-    width: "33.3%",
-  },
-  {
-    url: "/wardrobe-rack.webp",
-    title: "Wardrobe Rack",
-    width: "33.3%",
-  },
-  {
-    url: "/water-dispenser.webp",
-    title: "Water Dispenser",
     width: "33.3%",
   },
   {
