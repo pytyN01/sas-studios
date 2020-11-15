@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Typography align="center" variant="h1" gutterBottom>
+      <Typography align="left" variant="h4" gutterBottom>
         Rental Locations
       </Typography>
       <Card />

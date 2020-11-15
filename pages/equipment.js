@@ -21,32 +21,32 @@ export default function Home() {
         <title>SAS: Rental Equipment</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Typography align="left" variant="h5" gutterBottom>
+      <Typography align="left" variant="h4" gutterBottom>
         Most Popular Rental Equipment
       </Typography>
       <Popular />
 
-      <Typography align="left" variant="h5" gutterBottom>
+      <Typography align="left" variant="h4" gutterBottom>
         Office Equipment
       </Typography>
       <Office />
 
-      <Typography align="left" variant="h5" gutterBottom>
+      <Typography align="left" variant="h4" gutterBottom>
         Outdoor Equipment
       </Typography>
       <Outdoor />
 
-      <Typography align="left" variant="h5" gutterBottom>
+      <Typography align="left" variant="h4" gutterBottom>
         Set Design Equipment
       </Typography>
       <Set />
 
-      <Typography align="left" variant="h5" gutterBottom>
+      <Typography align="left" variant="h4" gutterBottom>
         Grip Equipment
       </Typography>
       <Grip />
 
-      <Typography align="left" variant="h5" gutterBottom>
+      <Typography align="left" variant="h4" gutterBottom>
         All Equipment
       </Typography>
       <All />

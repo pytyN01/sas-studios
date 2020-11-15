@@ -2,39 +2,64 @@ import React from "react";
 
 const slides = [
   {
-    title: "Machu Picchu",
-    subtitle: "Peru",
-    description: "Adventure is never far away",
-    image:
-      "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+    title: "X-Men",
+    subtitle: "2000",
+    description: "Director: Bryan Singer",
+    image: "/XM.jpg",
   },
   {
-    title: "Chamonix",
-    subtitle: "France",
-    description: "Let your dreams come true",
-    image:
-      "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+    title: "Star Trek: Into Darkness",
+    subtitle: "2013",
+    description: "Director: J.J. Abrams",
+    image: "/ST.jpg",
   },
   {
-    title: "Mimisa Rocks",
-    subtitle: "Australia",
-    description: "A piece of heaven",
-    image:
-      "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+    title: "Solaris",
+    subtitle: "1972",
+    description: "Director: Andrei Tarkovsky",
+    image: "/S.jpg",
   },
   {
-    title: "Four",
-    subtitle: "Australia",
-    description: "A piece of heaven",
-    image:
-      "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+    title: "Resident Evil: Retribution",
+    subtitle: "2012",
+    description: "Director: Paul W. S. Anderson",
+    image: "/RER.jpg",
   },
   {
-    title: "Five",
-    subtitle: "Australia",
-    description: "A piece of heaven",
-    image:
-      "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+    title: "Men In Black",
+    subtitle: "1997",
+    description: "Director: Barry Sonnenfeld; F. Gary Gray",
+    image: "/MIB.jpg",
+  },
+  {
+    title: "Mission Impossible 3",
+    subtitle: "2006",
+    description: "Director: J.J. Abrams",
+    image: "/MI3.jpg",
+  },
+  {
+    title: "Ironman 3",
+    subtitle: "2013",
+    description: "Director: Shane Black",
+    image: "/IM3.jpg",
+  },
+  {
+    title: "The Dark Knight",
+    subtitle: "2008",
+    description: "Director: Christopher Nolan",
+    image: "/DK.jpg",
+  },
+  {
+    title: "Angeles & Demons",
+    subtitle: "2009",
+    description: "Director: Ron Howard",
+    image: "/A&D.jpg",
+  },
+  {
+    title: "Avatar",
+    subtitle: "2008",
+    description: "Director: James Cameron",
+    image: "/A.jpg",
   },
 ];
 
