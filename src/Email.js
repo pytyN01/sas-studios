@@ -101,7 +101,7 @@ export default function MultilineTextFields() {
             error={name.length === 0 ? false : name.length === 1 ? true : false}
             required
             id="NAME"
-            label="Full Name Or Title"
+            label="Name Or Title"
             variant="outlined"
             placeholder="Full Name Or Title"
             helperText={

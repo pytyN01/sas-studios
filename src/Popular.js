@@ -6,13 +6,88 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const POPULAR = [
   {
-    url: "/ac-unit.webp",
-    title: "AC Units",
+    url: "/scissor-lift.webp",
+    title: "Scissor Lift",
+    width: "33.3%",
+  },
+  {
+    url: "/grip-truck.webp",
+    title: "Grip Truck",
     width: "33.3%",
   },
   {
     url: "/boom-lift.webp",
     title: "Boom Lift",
+    width: "33.3%",
+  },
+  {
+    url: "/production-trailer.webp",
+    title: "Production Trailer",
+    width: "33.3%",
+  },
+  {
+    url: "/silent-generator.webp",
+    title: "Silent Generator",
+    width: "33.3%",
+  },
+  {
+    url: "/power-dome.webp",
+    title: "Power Dome",
+    width: "33.3%",
+  },
+  {
+    url: "/fuel-delivery.webp",
+    title: "Fuel Delivery",
+    width: "33.3%",
+  },
+  {
+    url: "/distribution-box.webp",
+    title: "Distribution Box",
+    width: "33.3%",
+  },
+  {
+    url: "/premade-set.webp",
+    title: "Pre-made Set",
+    width: "33.3%",
+  },
+  {
+    url: "/event-staging.webp",
+    title: "Event Staging",
+    width: "33.3%",
+  },
+  {
+    url: "/trussing-support.webp",
+    title: "Trussing Support",
+    width: "33.3%",
+  },
+  {
+    url: "/set-wall.webp",
+    title: "Set Wall",
+    width: "33.3%",
+  },
+  {
+    url: "/led-wall-panels.webp",
+    title: "LED Wall Panels Box",
+    width: "33.3%",
+  },
+  {
+    url: "/ac-unit.webp",
+    title: "AC Units",
+    width: "33.3%",
+  },
+  {
+    url: "/fuel-tank.webp",
+    title: "Fuel Tank",
+    width: "33.3%",
+  },
+  {
+    url: "/fuel-caddy.webp",
+    title: "Fuel Caddy",
+    width: "33.3%",
+  },
+  {
+    url: "/walkie-talkie.webp",
+    title: "Walkie Talkie",
     width: "33.3%",
   },
   {
@@ -26,58 +101,8 @@ const POPULAR = [
     width: "33.3%",
   },
   {
-    url: "/distribution-box.webp",
-    title: "Distribution Box",
-    width: "33.3%",
-  },
-  {
-    url: "/event-staging.webp",
-    title: "Event Staging",
-    width: "33.3%",
-  },
-  {
-    url: "/fuel-caddy.webp",
-    title: "Fuel Caddy",
-    width: "33.3%",
-  },
-  {
-    url: "/fuel-delivery.webp",
-    title: "Fuel Delivery",
-    width: "33.3%",
-  },
-  {
-    url: "/fuel-tank.webp",
-    title: "Fuel Tank",
-    width: "33.3%",
-  },
-  {
-    url: "/grip-truck.webp",
-    title: "Grip Truck",
-    width: "33.3%",
-  },
-  {
     url: "/man-lift.webp",
     title: "Man Lift",
-    width: "33.3%",
-  },
-  {
-    url: "/premade-set.webp",
-    title: "Pre-made Set",
-    width: "33.3%",
-  },
-  {
-    url: "/production-trailer.webp",
-    title: "Production Trailer",
-    width: "33.3%",
-  },
-  {
-    url: "/scissor-lift.webp",
-    title: "Scissor Lift",
-    width: "33.3%",
-  },
-  {
-    url: "/silent-generator.webp",
-    title: "Silent Generator",
     width: "33.3%",
   },
   {
@@ -93,11 +118,6 @@ const POPULAR = [
   {
     url: "/taco-cart.webp",
     title: "Taco Cart",
-    width: "33.3%",
-  },
-  {
-    url: "/trussing-support.webp",
-    title: "Trussing Support",
     width: "33.3%",
   },
 ];

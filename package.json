@@ -15,6 +15,8 @@
     "prop-types": "^15.7.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-iframe": "^1.8.0",
+    "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed#v1.1.1",
     "sweetalert2": "^10.10.0"
   }
 }

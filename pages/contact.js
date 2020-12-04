@@ -1,5 +1,6 @@
-import { Typography } from "@material-ui/core";
+import { Typography, Grid, Button } from "@material-ui/core";
 import Navbar from "../src/Navbar";
+import Iframe from "react-iframe";
 import Email from "../src/Email";
 import Head from "next/head";
 import React from "react";
@@ -17,28 +18,181 @@ export default function Home() {
       </Head>
       <Navbar />
 
-      <div className="parallax">
-        <div className="parallax-text">
-          <Typography align="center" variant="h6" gutterBottom>
-            BEST SERVICE IN TOWN
-          </Typography>
-          <Typography align="center" variant="h2" gutterBottom>
-            CALL US 24/7!
-          </Typography>
-          <Typography align="center" variant="h4" gutterBottom>
-            (949) 250-9999
-          </Typography>
-        </div>
-      </div>
-      <div className="parallax-subtext">
-        <Typography align="center" variant="h4" gutterBottom>
-          SAS MOVIE STUDIOS LOS ANGELES DIVISION
-        </Typography>
-        <Typography align="center" variant="h6" gutterBottom>
-          If you have any questions please reach out to us using the form below:
-        </Typography>
-
-        <Email />
+      <div>
+        <section className="section parallax greeting">
+          <div
+            style={{
+              background: "rgba(0,0,0,0.5)",
+              padding: "6%",
+              borderRadius: "40px",
+            }}
+          >
+            <Typography align="center" variant="h1">
+              SAS MOVIE STUDIOS
+            </Typography>
+            <Typography align="center" variant="h2" gutterBottom>
+              CALL US 24/7!
+            </Typography>
+            <Typography align="center" variant="h4">
+              (949) 250-9999
+            </Typography>
+            <div style={{ marginTop: "40px", textAlign: "center" }}>
+              <Button
+                variant="contained"
+                href="#footer"
+                style={{
+                  color: "black",
+                  backgroundColor: "white",
+                  fontSize: "2rem",
+                }}
+              >
+                Contact Us Now
+              </Button>
+            </div>
+          </div>
+        </section>
+        <section className="section2 parallax Tennessee">
+          <Grid container spacing={0}>
+            <Grid item xs={12} sm={6}>
+              <Iframe
+                url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.578024608965!2d-86.89030908486039!3d36.540173489993464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864556e9147cadf%3A0xa4c7d529747b6eaa!2s210%20Charles%20Ralph%20Dr%2C%20Springfield%2C%20TN%2037172!5e0!3m2!1sen!2sus!4v1607120035266!5m2!1sen!2sus"
+                width="100%"
+                height="775px"
+                frameBorder="0"
+                style={{ border: 0 }}
+                allowFullScreen
+                aria-hidden="false"
+                tabIndex="0"
+              />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              style={{
+                background: "url(/Tennessee.jpg) no-repeat center center fixed",
+                backgroundSize: "cover",
+              }}
+              className="center-text"
+            >
+              <div
+                style={{
+                  color: "white",
+                  background: "rgba(0,0,0,0.7)",
+                  padding: "6%",
+                  borderRadius: "25px",
+                }}
+              >
+                <Typography align="center" variant="h2" gutterBottom>
+                  Tennessee
+                </Typography>
+                <Typography align="center" variant="h6">
+                  Fully renovated with film studios, our Tennessee base is home
+                  to the next film studios on the east coast!
+                </Typography>
+              </div>
+            </Grid>
+          </Grid>
+        </section>
+        <section className="section2 parallax Kentucky">
+          <Grid container spacing={0}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              style={{
+                background: "url(/Kentucky.jpg) no-repeat center center fixed",
+                backgroundSize: "cover",
+              }}
+              className="center-text"
+            >
+              <div
+                style={{
+                  color: "white",
+                  background: "rgba(0,0,0,0.7)",
+                  padding: "6%",
+                  borderRadius: "25px",
+                }}
+              >
+                <Typography align="center" variant="h3" gutterBottom>
+                  Kentucky
+                </Typography>
+                <Typography align="center" variant="h6">
+                  SAS owns natural filming locations in Kentucky that include a
+                  full scale town, restaurants, and a magnificent cave.
+                </Typography>
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Iframe
+                url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.578024608965!2d-86.89030908486039!3d36.540173489993464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864556e9147cadf%3A0xa4c7d529747b6eaa!2s210%20Charles%20Ralph%20Dr%2C%20Springfield%2C%20TN%2037172!5e0!3m2!1sen!2sus!4v1607120035266!5m2!1sen!2sus"
+                width="100%"
+                height="775px"
+                frameBorder="0"
+                style={{ border: 0 }}
+                allowFullScreen
+                aria-hidden="false"
+                tabIndex="0"
+              />
+            </Grid>
+          </Grid>
+        </section>
+        <section className="section2 parallax Los-Angeles">
+          <Grid container spacing={0}>
+            <Grid item xs={12} sm={6}>
+              <Iframe
+                url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.578024608965!2d-86.89030908486039!3d36.540173489993464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864556e9147cadf%3A0xa4c7d529747b6eaa!2s210%20Charles%20Ralph%20Dr%2C%20Springfield%2C%20TN%2037172!5e0!3m2!1sen!2sus!4v1607120035266!5m2!1sen!2sus"
+                width="100%"
+                height="775px"
+                frameBorder="0"
+                style={{ border: 0 }}
+                allowFullScreen
+                aria-hidden="false"
+                tabIndex="0"
+              />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              style={{
+                background: "url(/LA.jpg) no-repeat center center fixed",
+                backgroundSize: "cover",
+              }}
+              className="center-text"
+            >
+              <div
+                style={{
+                  color: "white",
+                  background: "rgba(0,0,0,0.7)",
+                  padding: "6%",
+                  borderRadius: "25px",
+                }}
+              >
+                <Typography align="center" variant="h3" gutterBottom>
+                  Los Angeles
+                </Typography>
+                <Typography align="center" variant="h6">
+                  Located in Downtown, LA, the LA division operates with film
+                  production, offering rental services for film equipment,
+                  locations, crew, and other resources for your production
+                  needs!
+                </Typography>
+              </div>
+            </Grid>
+          </Grid>
+        </section>
+        <section className="section footer" id="footer">
+          <Grid container spacing={3}>
+            <Grid item xs={12}>
+              <Typography align="center" variant="h6" gutterBottom>
+                If you have any questions please reach out to us using the form
+                below:
+              </Typography>
+              <Email />
+            </Grid>
+          </Grid>
+        </section>
       </div>
     </React.Fragment>
   );

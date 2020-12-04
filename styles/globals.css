@@ -147,7 +147,8 @@ a {
 }
 
 .feature-main {
-  background: white;
+  z-index: 99;
+  background: black;
   position: relative;
 }
 
@@ -159,9 +160,10 @@ a {
 }
 
 .feature-text {
+  z-index: 100;
   background: white;
   width: 100vw;
-  height: 40vh;
+  height: 0vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,28 +311,140 @@ a {
     rotateX(calc(var(--y) * -45deg));
 }
 
-.parallax {
-  background-image: url("/contact.jpg");
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
+.Loading {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #444;
+  border-radius: 50%;
+  width: 20vh;
+  height: 20vh;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Feed {
+  margin: auto;
+  padding: 1% 7%;
+}
+
+.Feed a img {
+  margin: 1% 1%;
+  width: 31.3%;
+  float: left;
+  animation: fadein 0.5s;
+  /* filter: brightness(20%); */
+  filter: grayscale(100%);
+}
+
+.Feed a img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.8));
+  /* filter: brightness(100%); */
+  filter: grayscale(0%);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.section2 {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.parallax::after {
+  background-image: url(/contact.jpg);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  transform: translateZ(-1px) scale(1.7);
+  z-index: -1;
+}
+
+.greeting {
+  height: 100vh;
   color: white;
 }
 
-.parallax-text {
-  border-radius: 20px;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 5%;
-  background-color: rgba(0, 0, 0, 0.5);
+.greeting h5 {
+  margin: 0 15vw;
 }
 
-.parallax-subtext {
-  height: 92.5vh;
-  padding: 5vh 4vh 11vh;
+.greeting::after {
+  background-image: url(/contact.jpg);
+}
+
+.Tennessee {
+  height: 100vh;
+}
+
+.Tennessee::after {
+  background-image: url(/contact.jpg);
+}
+
+.Kentucky {
+  height: 100vh;
+  text-align: center;
+}
+
+.Kentucky::after {
+  background-image: url(/contact.jpg);
+}
+
+.Kentucky button {
+  z-index: 2;
+  font-size: 2rem;
+}
+
+.Los-Angeles {
+  height: 100vh;
+  text-align: center;
+}
+
+.Los-Angeles::after {
+  background-image: url(/contact.jpg);
+}
+
+.footer {
+  padding-top: 40vh;
+  padding: 3vh 3vw 0;
+  align-items: flex-start !important;
+  background-color: white;
+  color: black;
+  height: 90vh;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.center-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 150px;
+  padding-left: 150px;
 }

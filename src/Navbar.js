@@ -16,8 +16,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(0, 0, 0, 0.6)",
     zIndex: 9999,
   },
-  title: {
-    flexGrow: 1,
+  img: {
+    width: "300px",
+    marginRight: "auto",
+    // flexGrow: 1,
   },
 }));
 
@@ -28,9 +30,8 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar variant="dense">
-          <Typography variant="h6" className={classes.title}>
-            SAS Movie Studios
-          </Typography>
+          <img src="/logo.png" className={classes.img} />
+
           <Button component={Link} href="/" naked color="inherit">
             Home
           </Button>
