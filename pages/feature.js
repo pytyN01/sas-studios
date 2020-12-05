@@ -4,7 +4,7 @@ import Navbar from "../src/Navbar";
 import Head from "next/head";
 import React from "react";
 
-import { Typography } from "@material-ui/core";
+import { Typography, Hidden } from "@material-ui/core";
 
 export default function Home() {
   React.useEffect(() => {
@@ -17,25 +17,46 @@ export default function Home() {
         <title>SAS: Feature Films</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <div className="feature-html">
-        <div className="feature-body">
-          <FeatureFilms />
+      <Hidden smDown>
+        <Navbar />
+        <div className="feature-html">
+          <div className="feature-body">
+            <FeatureFilms />
+          </div>
         </div>
-      </div>
-      <div className="feature-main">
-        <Typography align="center" variant="h2" style={{ color: "white" }}>
-          Follow us on Instagram
-        </Typography>
-        <div className="feature-text">
-          <Feed
-            userName="sasmoviestudio"
-            className="Feed"
-            classNameLoading="Loading"
-            limit="15"
-          />
+        <div className="feature-main">
+          <Typography align="center" variant="h2" style={{ color: "white" }}>
+            Follow us on Instagram
+          </Typography>
+          <div className="feature-text">
+            <Feed
+              userName="sasmoviestudio"
+              className="Feed"
+              classNameLoading="Loading"
+              limit="15"
+            />
+          </div>
         </div>
-      </div>
+      </Hidden>
+
+      <Hidden mdUp>
+        <div
+          style={{
+            height: "100vh",
+            width: "100vw",
+            color: "white",
+            backgroundColor: "black",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Typography align="center" variant="h6">
+            Currently working on mobile site. <br />
+            Please use on your desktop.
+          </Typography>
+        </div>
+      </Hidden>
     </React.Fragment>
   );
 }

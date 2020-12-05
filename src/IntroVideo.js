@@ -100,7 +100,7 @@ export default function IntroVideo() {
       </div>
       <div className="main">
         <div className="slogan-banner">
-          <Typography variant="h2">
+          <Typography variant="h3">
             Largest inventory! Lowest price! Guaranteed!!
           </Typography>
         </div>
@@ -133,7 +133,7 @@ export default function IntroVideo() {
         </ButtonBase>
 
         <div className="slogan-banner">
-          <Typography variant="h2">Coast-to-Coast Film Locations!</Typography>
+          <Typography variant="h3">Coast-to-Coast Film Locations!</Typography>
         </div>
 
         <ButtonBase

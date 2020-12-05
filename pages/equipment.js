@@ -8,7 +8,7 @@ import Head from "next/head";
 import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
+import { Typography, Hidden } from "@material-ui/core";
 
 import Set from "../src/Set";
 import Grip from "../src/Grip";
@@ -20,6 +20,7 @@ import EquipmentDrawer from "../src/Drawer";
 
 const useStyles = makeStyles((theme) => ({
   fab: {
+    zIndex: "99",
     color: "white",
     position: "fixed",
     top: theme.spacing(8),
@@ -49,106 +50,137 @@ export default function Home() {
   }, []);
 
   return (
-    <Layout>
+    <React.Fragment>
       <Head>
         <title>SAS: Rental Equipment</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Hidden smDown>
+        <Layout>
+          <Fab
+            onClick={() => setDrawer(!drawer)}
+            size="small"
+            aria-label="show filter"
+            className={classes.fab}
+          >
+            <KeyboardArrowRightIcon />
+          </Fab>
 
-      <Fab
-        onClick={() => setDrawer(!drawer)}
-        size="small"
-        aria-label="show filter"
-        className={classes.fab}
-      >
-        <KeyboardArrowRightIcon />
-      </Fab>
+          <EquipmentDrawer
+            drawer={drawer}
+            toggleDrawer={() => setDrawer(!drawer)}
+          />
 
-      <EquipmentDrawer
-        drawer={drawer}
-        toggleDrawer={() => setDrawer(!drawer)}
-      />
+          <Accordion
+            expanded={expanded === "popular"}
+            onChange={handleChange("popular")}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography className={classes.heading}>
+                Most Popular Rental Equipment
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Popular />
+            </AccordionDetails>
+          </Accordion>
 
-      <Accordion
-        expanded={expanded === "popular"}
-        onChange={handleChange("popular")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
+          <Accordion
+            expanded={expanded === "office"}
+            onChange={handleChange("office")}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography className={classes.heading}>
+                Office Equipment
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Office />
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion
+            expanded={expanded === "outdoor"}
+            onChange={handleChange("outdoor")}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography className={classes.heading}>
+                Outdoor Equipment
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Outdoor />
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion
+            expanded={expanded === "set-design"}
+            onChange={handleChange("set-design")}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography className={classes.heading}>
+                Set Design Equipment
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Set />
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion
+            expanded={expanded === "grip"}
+            onChange={handleChange("grip")}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography className={classes.heading}>
+                Grip Equipment
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Grip />
+            </AccordionDetails>
+          </Accordion>
+        </Layout>
+      </Hidden>
+
+      <Hidden mdUp>
+        <div
+          style={{
+            height: "100vh",
+            width: "100vw",
+            color: "white",
+            backgroundColor: "black",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
-          <Typography className={classes.heading}>
-            Most Popular Rental Equipment
+          <Typography align="center" variant="h6">
+            Currently working on mobile site. <br />
+            Please use on your desktop.
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Popular />
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion
-        expanded={expanded === "office"}
-        onChange={handleChange("office")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className={classes.heading}>Office Equipment</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Office />
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion
-        expanded={expanded === "outdoor"}
-        onChange={handleChange("outdoor")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className={classes.heading}>Outdoor Equipment</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Outdoor />
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion
-        expanded={expanded === "set-design"}
-        onChange={handleChange("set-design")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className={classes.heading}>
-            Set Design Equipment
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Set />
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion expanded={expanded === "grip"} onChange={handleChange("grip")}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className={classes.heading}>Grip Equipment</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Grip />
-        </AccordionDetails>
-      </Accordion>
-    </Layout>
+        </div>
+      </Hidden>
+    </React.Fragment>
   );
 }
