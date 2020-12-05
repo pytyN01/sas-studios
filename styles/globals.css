@@ -436,7 +436,7 @@ a {
   align-items: flex-start !important;
   background-color: white;
   color: black;
-  height: 90vh;
+  height: 80vh;
   box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
   text-align: center;
 }
